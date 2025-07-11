@@ -16,7 +16,7 @@
     'license': 'LGPL-3',
     'price': 100,
     'currency': 'USD',
-    'images': ['static/description/icon.png','static/description/cover.jpg'],
+    'images': ['static/description/icon.png','static/description/cover.jpg','static/description/screenshot1.png','static/description/screenshot2.png'],
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'mrp', 'mrp_account_enterprise', 'purchase_mrp' ,'documents', 'mrp_plm'],
