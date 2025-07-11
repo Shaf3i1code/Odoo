@@ -1,41 +1,62 @@
-<h2> Manual Cost Sharing for Byproducts in Odoo MRP</h2>
-
+<h2>Overview</h2>
 <p>
-This module solves a practical need observed in real production environments — including factories like <strong>El Waily Group</strong> — where percentage-based cost sharing is not sufficient or flexible enough.
+This module introduces a more intuitive and flexible way to manage byproduct cost allocation in Odoo Manufacturing Orders.
+Instead of assigning cost shares as percentages, this module allows you to assign precise monetary values for each byproduct.
+This improvement leads to enhanced accuracy and better traceability in manufacturing cost management.
 </p>
 
+<h2>Why This Matters for Manufacturers</h2>
 <p>
-With this module, you can manually assign <strong>exact monetary values</strong> to byproducts in a manufacturing order. The system then calculates the unit cost automatically, helping you improve traceability and cost control.
+In many real-world manufacturing environments, especially those with dynamic pricing, byproducts hold actual market value.
+However, the default cost-sharing logic in Odoo relies on fixed percentage-based allocations. This often requires users to edit Bills of Materials or perform manual recalculations every time prices change.
 </p>
-
-<h3> Key Features:</h3>
+<p>
+With this module, you can:
 <ul>
-  <li>Enter the total cost (e.g., $5) for any byproduct</li>
-  <li>Automatically calculates the unit cost (e.g., $1 per kg)</li>
-  <li>Supports real-time revaluation without touching BoMs</li>
-  <li>Integrated directly into Manufacturing Orders</li>
+  <li>Enter the exact total cost of each byproduct directly in the Manufacturing Order.</li>
+  <li>Automatically calculate the unit cost based on the total and produced quantity.</li>
+  <li>Revalue cost sharing in real time without editing the BoM.</li>
+  <li>Improve accounting accuracy for inventory valuation and cost of goods sold.</li>
+  <li>Support rapid production cycles where cost logic must stay aligned with market changes.</li>
+</ul>
+</p>
+
+<h2>Main Features</h2>
+<ul>
+  <li>Direct cost entry per byproduct in MOs (e.g., $10 total for 5 kg)</li>
+  <li>Auto-computed unit cost (e.g., $2 per kg)</li>
+  <li>Fully integrated with the standard Odoo Manufacturing process</li>
+  <li>Eliminates the need to update BoMs for price adjustments</li>
+  <li>Supports detailed cost analysis and transparency</li>
 </ul>
 
-<hr/>
+<h2>How It Works</h2>
 
-<h3> How it works — Real screenshots:</h3>
-
-<h4>1 Enter total cost per byproduct directly in the MO</h4>
-<img src="screenshot1.png" alt="Manual cost entry for byproducts" width="100%" />
-
-<p style="margin-top: 10px;">
-In this view, you can see the exact cost values entered for each byproduct — no percentages, just real amounts in your working currency.
-</p>
-
-<h4>2 Unit cost is calculated automatically</h4>
-<img src="screenshot2.png" alt="Unit cost auto calculation" width="100%" />
-
+<h3>1. Enter the total cost per byproduct directly in the MO</h3>
+<img src="screenshot1.png" alt="Manual cost entry for byproducts" style="max-width:100%; border:1px solid #ccc; border-radius:4px;">
 <p>
-The system automatically computes unit cost (e.g., 5 kg = $5 → $1/kg). This allows accurate product valuation without relying on rigid predefined rules.
+In this view, you can input the real total cost of each byproduct manually. The system stores these values in the same currency used in your manufacturing processes.
 </p>
 
-<hr/>
+<h3>2. Unit cost is automatically calculated</h3>
+<img src="screenshot2.png" alt="Unit cost calculation" style="max-width:100%; border:1px solid #ccc; border-radius:4px;">
+<p>
+Once the total cost and quantity are entered, the system calculates the unit cost automatically (e.g., $10 ÷ 5 kg = $2 per kg). These values are reflected in inventory valuation.
+</p>
 
-<p style="font-style: italic; margin-top: 20px;">
-Designed for fast-paced, real-world factories that need to adapt cost logic based on dynamic pricing.
+<h2>Ideal For</h2>
+<ul>
+  <li>Food and beverage processing</li>
+  <li>Chemical and pharmaceutical industries</li>
+  <li>Soap, cosmetic, and detergent factories</li>
+  <li>Industrial manufacturing with multi-output production lines</li>
+</ul>
+
+<h2>Getting Started</h2>
+<p>
+After installing the module, open any Manufacturing Order, go to the "By-Products" tab, and start entering cost values. No extra configuration is needed.
+</p>
+
+<p style="font-style: italic;">
+This module is designed for manufacturers who need practical tools to manage cost complexity with minimal overhead.
 </p>
