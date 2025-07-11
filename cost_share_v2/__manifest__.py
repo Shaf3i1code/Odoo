@@ -16,6 +16,7 @@
     'license': 'LGPL-3',
     'price': 200,
     'currency': 'USD',
+    'images': ['cost_share_v2\static\description'],
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'mrp', 'mrp_account_enterprise', 'purchase_mrp' ,'documents', 'mrp_plm'],
