@@ -3,7 +3,7 @@
     'name': "Cost Sharing ",
     'version': '18.0.0.1',
     'summary': """
-        Make Cost Share Fixed Again""",
+        Easily assign exact cost values to byproducts in Manufacturing Orders. No more percentages — enter the actual amount, and let the system calculate the unit cost automatically. Ideal for dynamic pricing and real-time cost revaluation.""",
 
     'description': """
 
