@@ -14,7 +14,7 @@
     'website': "https://www.linkedin.com/in/mohandelshafei/",
     'category': 'Manufacturing',
     'license': 'LGPL-3',
-    'price': 10,000,
+    'price': 10000,
     'currency': 'EGP',
 
     # any module necessary for this one to work correctly
