@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "cost sharing ",
+    'name': "Cost Sharing ",
     'version': '18.0.0.1',
     'summary': """
         Make Cost Share Fixed Again""",
