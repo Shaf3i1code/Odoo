@@ -14,7 +14,7 @@
     'website': "https://www.linkedin.com/in/mohandelshafei/",
     'category': 'Manufacturing',
     'license': 'LGPL-3',
-    'price': 200,
+    'price': 100,
     'currency': 'USD',
     'images': ['static/description/icon.png','static/description/cover.jpg'],
 
