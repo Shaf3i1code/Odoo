@@ -10,7 +10,7 @@
     """,
 
     'author': "Mohanad Elshafei",
-    'company': "El Welely Group",
+    'company': "infotix",
     'website': "https://www.linkedin.com/in/mohandelshafei/",
     'category': 'Manufacturing',
     'license': 'LGPL-3',
