@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mrp_cost_structure_custom_bom_fixed_cost_share" inherit_id="mrp_account_enterprise.mrp_cost_structure">
+        <xpath expr="(//table[hasclass('o_mrp_report_table')])[last()]/tbody/tr/td[2]" position="replace">
+            <td class="text-end">
+               <span t-esc="line['component_cost_by_product'][line['product']]" t-options='{"widget": "monetary", "display_currency": currency}'/>
+            </td>
+        </xpath>
+        <xpath expr="(//table[hasclass('o_mrp_report_table')])[last()]/tbody/tr/td[4]" position="replace">
+            <td class="text-end">
+                <span t-esc="line['total_cost_by_product'][line['product']]" t-options='{"widget": "monetary", "display_currency": currency}'/>
+            </td>
+        </xpath>
+
+        <xpath expr="(//table[hasclass('o_mrp_report_table')])[last()]/tbody/tr[2]/td[2]" position="replace">
+            <td class="text-end">
+                <span t-esc="line['component_cost_by_product'][byproduct[0]]" t-options='{"widget": "monetary", "display_currency": currency}'/>
+            </td>
+        </xpath>
+        <xpath expr="(//table[hasclass('o_mrp_report_table')])[last()]/tbody/tr[2]/td[4]" position="replace">
+            <td class="text-end">
+                <span t-esc="line['total_cost_by_product'][byproduct[0]]" t-options='{"widget": "monetary", "display_currency": currency}'/>
+            </td>
+        </xpath>
+    </template>
+</odoo>
