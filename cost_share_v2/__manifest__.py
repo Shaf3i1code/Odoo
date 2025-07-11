@@ -3,10 +3,27 @@
     'name': "Cost Sharing ",
     'version': '18.0.0.1',
     'summary': """
-        Easily assign exact cost values to byproducts in Manufacturing Orders. No more percentages — enter the actual amount, and let the system calculate the unit cost automatically. Ideal for dynamic pricing and real-time cost revaluation.""",
+        Easily assign exact cost values to byproducts in Manufacturing Orders.""",
 
     'description': """
+This module allows manufacturing teams to assign exact total cost values to byproducts in a Manufacturing Order (MO),
+replacing Odoo's default percentage-based cost sharing system.
 
+Instead of using fixed percentages, users can manually input the actual monetary value of each byproduct. 
+The module then calculates the unit cost automatically based on the produced quantity.
+
+Key Features:
+- Manually assign total cost for each byproduct (e.g., $5 for 5 kg)
+- Automatically computes unit cost (e.g., $1 per kg)
+- No need to modify the Bill of Materials for cost updates
+- Integrated directly into the Manufacturing Order screen
+- Enables real-time revaluation without complex configuration
+- Improves cost accuracy and transparency in inventory valuation
+
+Ideal for:
+- Factories working with volatile byproduct pricing
+- Industries like food processing, chemicals, or packaging
+- Any production environment needing flexible cost allocation
     """,
 
     'author': "Mohanad Elshafei",
