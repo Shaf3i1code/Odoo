@@ -1,24 +1,41 @@
-<h2>Manual Cost Sharing for Byproducts in Manufacturing</h2>
+<h2> Manual Cost Sharing for Byproducts in Odoo MRP</h2>
 
 <p>
-This module enhances Odoo's Manufacturing (MRP) capabilities by allowing users to assign <strong>exact monetary values</strong> to byproducts instead of relying on fixed percentage-based cost shares.
+This module solves a practical need observed in real production environments — including factories like <strong>El Waily Group</strong> — where percentage-based cost sharing is not sufficient or flexible enough.
+</p>
+
+<p>
+With this module, you can manually assign <strong>exact monetary values</strong> to byproducts in a manufacturing order. The system then calculates the unit cost automatically, helping you improve traceability and cost control.
 </p>
 
 <h3> Key Features:</h3>
 <ul>
-  <li>Define cost share per byproduct using real currency values (e.g., $5, $10).</li>
-  <li>Automatically calculates the unit cost based on quantity. Example: if 5 kg of a byproduct is assigned $5, the unit cost becomes $1/kg.</li>
-  <li>Improves cost traceability and simplifies re-pricing for future manufacturing orders.</li>
-  <li>Eliminates the need to recalculate percentage shares every time product prices change.</li>
+  <li>Enter the total cost (e.g., $5) for any byproduct</li>
+  <li>Automatically calculates the unit cost (e.g., $1 per kg)</li>
+  <li>Supports real-time revaluation without touching BoMs</li>
+  <li>Integrated directly into Manufacturing Orders</li>
 </ul>
 
-<h3> Use Case:</h3>
-<p>
-Instead of setting cost shares as percentages, you can now specify that 5 units of a byproduct should represent a total of $5. This allows your costing to match actual market or internal valuations, making it easier to update prices when raw material costs fluctuate.
+<hr/>
+
+<h3> How it works — Real screenshots:</h3>
+
+<h4>1 Enter total cost per byproduct directly in the MO</h4>
+<img src="screenshot1.png" alt="Manual cost entry for byproducts" width="100%" />
+
+<p style="margin-top: 10px;">
+In this view, you can see the exact cost values entered for each byproduct — no percentages, just real amounts in your working currency.
 </p>
 
-<h3> Compatibility:</h3>
-<ul>
-  <li>Odoo 18.0 Enterprise</li>
-  <li>Fully integrated with MRP and Inventory modules</li>
-</ul>
+<h4>2 Unit cost is calculated automatically</h4>
+<img src="screenshot2.png" alt="Unit cost auto calculation" width="100%" />
+
+<p>
+The system automatically computes unit cost (e.g., 5 kg = $5 → $1/kg). This allows accurate product valuation without relying on rigid predefined rules.
+</p>
+
+<hr/>
+
+<p style="font-style: italic; margin-top: 20px;">
+Designed for fast-paced, real-world factories that need to adapt cost logic based on dynamic pricing.
+</p>
